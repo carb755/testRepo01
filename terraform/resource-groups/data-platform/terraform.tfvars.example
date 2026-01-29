@@ -1,0 +1,30 @@
+# Example terraform.tfvars for Development Environment
+# Copy this file to terraform.tfvars and update values
+
+# Environment Configuration
+environment  = "dev"
+location     = "eastus"
+project_name = "dataplatform"
+
+# Common Tags
+tags = {
+  Environment = "dev"
+  ManagedBy   = "Terraform"
+  Project     = "DataPlatform"
+  Owner       = "YourTeam"
+  CostCenter  = "CC-1234"
+}
+
+# Optional: Key Vault Configuration
+# Uncomment if deploying Key Vault
+# tenant_id = "your-tenant-id-here"
+
+# Optional: SQL Database Configuration
+# Uncomment if deploying SQL Database
+# sql_administrator_login = "sqladmin"
+# Store password in Key Vault or pass via command line
+# sql_administrator_password = "SecurePassword123!"
+
+# Optional: Cosmos DB Configuration
+# Uncomment if deploying Cosmos DB
+# cosmos_throughput = 400
